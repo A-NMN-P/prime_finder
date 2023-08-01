@@ -8,7 +8,7 @@ Name of Project : Prime Number Finder: function/ Libary Format
 
 That project find the prime numbers and gives the dividers of the none prime numbers.
 
-For more informationi look the ReadMe.txt
+For more informationi look the ReadMe file
 
 """
 # Head of the function
