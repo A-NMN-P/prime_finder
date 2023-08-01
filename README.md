@@ -5,6 +5,7 @@ I have share the basic version of the prime finder. Ready to copy and paste
 
 
 """
+
 Created on Mon Jul 31 22:45 2023
 Finished on Tue Aug 1 11:50 2023
 
@@ -13,10 +14,12 @@ Finished on Tue Aug 1 11:50 2023
 Name of Project : Prime Number Finder
 
 That project find the prime numbers and gives the dividers of the none prime numbers.
+
 """
 
 
 '''
+
 That comment code side is begining of the code.
 That comment have provide the none-imported function
 which is just operates under the included project as 
@@ -29,30 +32,38 @@ You may use the code regardless.
 
 
 by Ahmed Numan Pervane
+
 Mechatronics Engineer
+
 '''
 
-"""
-----------EXAMPLE CODE----------
+
+#----------EXAMPLE CODE----------
+
 from prime_finder import Prime_Finder, isPrime
 
 prime, noneprime, divider = Prime_Finder(initilizer = 2, limit = 10, prime_list=True, unprime_list=True, division_list=True, step = 1)
 
 print("Prime Numbers: ", prime)
+
 print("None Prime Numbers: ", noneprime)
+
 print("Dividers: ", divider)
 
 
-"""
 
 
 
-#user inputter copy-pase code:
-'''
+# user inputter copy-past code:
+
+# Main Code Block:
+
 flag1 = True
-# Main while loop
-while(flag1):
+
+while(flag1): # Main while loop:
+    
     print("Give a number for the testing of prime or not.\n")   # Inform the user about program.
+
     # Debugging the str valued inputs.
     try: 
         given_Num = int(input("Your given number: "))   # Take input from the user by keyboard.
@@ -136,4 +147,3 @@ while(flag1):
                     print('Keybord Interupted. System closed.') # if the user enters the none of the y or n then interupte the program and display the print.
                 flag1, flag2 = False, False # if user says no, then the close the main and first loop to not operate.
     
-'''
