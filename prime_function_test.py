@@ -2,7 +2,7 @@
 """
 Created on Tue Aug  1 19:34:39 2023
 
-@author: anper
+@author: Ahmed Numan Pervane
 """
 
 from prime_finder import Prime_Finder, isPrime
