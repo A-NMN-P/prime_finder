@@ -98,7 +98,7 @@ def isPrime(num: int, dividers: bool):
                             return notPrime
  
 
-def Prime_Finder(initilizer : int(2) , limit: int, prime_list: bool, noneprime_list: bool, division_list: bool, step : int(1) ):
+def Prime_Finder(initilizer: int = 2 , limit: int = 97, prime_list: bool = True, noneprime_list: bool = False, division_list: bool = False, step: int = 1 ):
     flager = True
     while flager:
         try: 
@@ -137,7 +137,7 @@ def Prime_Finder(initilizer : int(2) , limit: int, prime_list: bool, noneprime_l
                 if ((p_list_bool or unp_list_bool) is True and div_list_bool is True):
                     p, div = isPrime(counterTest, div_list_bool)
                    
-                elif ((p_list_bool is True or unp_list_bool is True) and div_list_bool is False):
+                elif ((p_list_bool and unp_list_bool) is True) and div_list_bool is False):
                     p = isPrime(counterTest, div_list_bool)
                     div = []
                     
@@ -149,54 +149,39 @@ def Prime_Finder(initilizer : int(2) , limit: int, prime_list: bool, noneprime_l
                     p, div = False, []
          
                 if p_list_bool:
-         
                     if p:
-         
                         prime_numbers.append(counterTest)
                     
                 if unp_list_bool:
-         
                     if not p:
-         
                         unprime_numbers.append(counterTest)
 
                 if div_list_bool:
-         
-                    
                     if len(div) > 0 and type(div[:]) is not bool:
-         
                         dividers.append(div)
                         dividers_main_list.append({counterTest : dividers[-1]})
 
                 if counterTest >= limit:
-         
                     if p_list_bool is True and unp_list_bool is False and div_list_bool is False:
                         return prime_numbers
-                
-
+                        
                     elif p_list_bool is False and unp_list_bool is True and div_list_bool is False:
                         return unprime_numbers
-    
     
                     elif p_list_bool is False and unp_list_bool is False and div_list_bool is True:
                         return dividers_main_list
                     
-                    
                     elif p_list_bool is True and unp_list_bool is True and div_list_bool is False:
                         return prime_numbers, unprime_numbers
                     
-    
                     elif p_list_bool is True and unp_list_bool is False and div_list_bool is True:
                         return prime_numbers, dividers_main_list
-    
     
                     elif p_list_bool is False and unp_list_bool is True and div_list_bool is True:
                         return unprime_numbers, dividers_main_list
                     
-                    
                     elif (p_list_bool and unp_list_bool and div_list_bool) is True:
                         return prime_numbers, unprime_numbers, dividers_main_list
-                    
                     
                     else: 
                         print('ERROR! System interupted.\nError type: unknown. Please handle that by yourself.')
@@ -206,7 +191,3 @@ def Prime_Finder(initilizer : int(2) , limit: int, prime_list: bool, noneprime_l
                 else:
                     counterTest += step
                     continue
-
-      
-            
-            
