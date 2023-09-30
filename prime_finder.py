@@ -31,8 +31,8 @@ def isPrime(num: int, dividers: bool):
             break
         else:
 
-            it_is_prime=[]          # Creat a list for decide the prime or not. Store the values of divider of given number includes its value and other divider except 1. 
-            it_isnot_prime=[]       # Creat a list for store the values of non-divider of given number.
+            it_is_prime     = []          # Creat a list for decide the prime or not. Store the values of divider of given number includes its value and other divider except 1. 
+            it_isnot_prime  = []       # Creat a list for store the values of non-divider of given number.
             list_of_divider = []    # Creat a list for store dividers except given number itself.
           
             flag2 = True
