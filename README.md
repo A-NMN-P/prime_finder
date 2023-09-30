@@ -1,7 +1,7 @@
 # prime_finder
 That code will decide a number is prime or not. Which that code includes two functions: isPrime and Prime_Finder. isPrime function is use to decide the given number is prime or not and if it is not a prime number -in your request- it gives you the dividers. Prime_Finder is take 6 atributes, 3 of them int other 3 is bool. 
 
-I have share the basic version of the prime finder. Ready to copy and paste
+I have shared the basic version of the prime finder. Ready to copy and paste
 
 
 """
@@ -75,7 +75,6 @@ print("Dividers: ", divider)
             continue
         # execution part
         else:
-            print(type(given_Num))
             flag2 = True
     
             if type(given_Num) is int:
@@ -85,7 +84,7 @@ print("Dividers: ", divider)
                 flag1, flag2 = True, False
     
             # check the given interger is 2 or less. 
-            # if it is 2 then just show up it is a prime number.
+            # if it is 2 then just show up it as a prime number.
             if given_Num == 2:
                 print("2 is a prime number")
                 flag2 = False
@@ -98,10 +97,11 @@ print("Dividers: ", divider)
             elif not flag2 == 1 :
                 print("SOMETHING WENT WRONG!\n Restart and change the given variable.")
                 flag1,flag2 = False, False
+                break
             
             
-            it_is_prime=[]          # Creat a list for decide the prime or not. Store the values of divider of given number includes its value and other divider except 1. 
-            it_isnot_prime=[]       # Creat a list for store the values of non-divider of given number.
+            it_is_prime =     []          # Creat a list for decide the prime or not. Store the values of divider of given number includes its value and other divider except 1. 
+            it_isnot_prime =  []       # Creat a list for store the values of non-divider of given number.
             list_of_divider = []    # Creat a list for store dividers except given number itself.
             
             # Start counter loop for decision of the primeness of number.
