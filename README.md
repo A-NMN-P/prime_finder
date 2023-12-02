@@ -25,14 +25,13 @@ That comment have provide the none-imported function
 which is just operates under the included project as 
 works on your project. You are free to copy.
 
-But the function version is alot simplier and more efficienct
-than the user keyboard input version (the commeted code).
+But the function version is a lot simplier and more efficienct
+than the user keyboard input version (the commentted code).
 
 You may use the code regardless.
 
 
 by Ahmed Numan Pervane
-
 Mechatronics Engineer
 
 '''
@@ -54,7 +53,7 @@ print("Dividers: ", divider)
 
 
 
-# user inputter copy-past code:
+# user-entered copy-past code:
 
 # Main Code Block:
 
@@ -147,3 +146,4 @@ print("Dividers: ", divider)
                         print('Keybord Interupted. System closed.') # if the user enters the none of the y or n then interupte the program and display the print.
                     flag1, flag2 = False, False # if user says no, then the close the main and first loop to not operate.
     
+## End of the user-entered values code blocks.
