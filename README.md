@@ -13,7 +13,7 @@ Finished on Tue Aug 1 11:50 2023
 
 Name of Project : Prime Number Finder
 
-That project finds the prime numbers and gives the dividers of the none prime numbers.
+That project finds the prime numbers and gives the dividers of none prime numbers.
 
 """
 
