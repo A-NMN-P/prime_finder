@@ -39,15 +39,15 @@ Mechatronics Engineer
 
 #----------EXAMPLE CODE----------#
 
-from prime_finder import Prime_Finder, isPrime
-
-prime, noneprime, divider = Prime_Finder(initilizer = 2, limit = 10, prime_list=True, unprime_list=True, division_list=True, step = 1)
-
-print("Prime Numbers: ", prime)
-
-print("None Prime Numbers: ", noneprime)
-
-print("Dividers: ", divider)
+    from prime_finder import Prime_Finder, isPrime
+    
+    prime, noneprime, divider = Prime_Finder(initilizer = 2, limit = 10, prime_list=True, unprime_list=True, division_list=True, step = 1)
+    
+    print("Prime Numbers: ", prime)
+    
+    print("None Prime Numbers: ", noneprime)
+    
+    print("Dividers: ", divider)
 
 
 
