@@ -137,7 +137,7 @@ def Prime_Finder(initilizer: int = 2 , limit: int = 97, prime_list: bool = True,
                 if ((p_list_bool or unp_list_bool) is True and div_list_bool is True):
                     p, div = isPrime(counterTest, div_list_bool)
                    
-                elif ((p_list_bool and unp_list_bool) is True) and div_list_bool is False):
+                elif (((p_list_bool and unp_list_bool) is True) and div_list_bool is False):
                     p = isPrime(counterTest, div_list_bool)
                     div = []
                     
